@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attorney Profile - LexSure</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 font-sans">
+  <!-- Header -->
+  <header class="bg-white shadow-sm sticky top-0 z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16 items-center">
+        <a href="index.html" class="text-indigo-600 font-bold text-xl">LexSure</a>
+        <nav class="hidden md:flex space-x-8">
+          <a href="index.html" class="text-gray-500 hover:text-gray-900">Home</a>
+          <a href="#" class="text-gray-500 hover:text-gray-900">Features</a>
+          <a href="#" class="text-gray-500 hover:text-gray-900">Pricing</a>
+          <a href="#" class="text-gray-500 hover:text-gray-900">FAQ</a>
+        </nav>
+        <div class="flex items-center">
+          <div class="bg-indigo-50 text-indigo-700 px-3 py-1 rounded-full flex items-center mr-4">
+            <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z"></path>
+              <path fill-rule="evenodd" d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path>
+            </svg>
+            <span class="font-medium">120 Credits</span>
+          </div>
+          <a href="#" class="px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">Account</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-4 py-8">
+    <!-- Profile Header -->
+    <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+      <div class="flex flex-col md:flex-row">
+        <!-- Profile Image -->
+        <div class="md:w-1/3 flex flex-col items-center md:items-start mb-6 md:mb-0">
+          <div class="relative">
+            <img src="https://cdn.prod.website-files.com/66a075e747e053000607797e/66b34c20914d6a2dc8106710_bibil%20jpg.jpg" 
+                alt="Attorney Muhammad Iqra Bilmaruf" 
+                class="w-40 h-40 rounded-full object-cover border-4 border-white shadow-md">
+            <div class="absolute bottom-0 right-0 bg-green-500 rounded-full w-5 h-5 border-2 border-white"></div>
+          </div>
+          <div class="mt-4 text-center md:text-left">
+            <span class="bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded-full font-medium">✅ Verified Legal Partner</span>
+            <div class="flex items-center mt-2 justify-center md:justify-start">
+              <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+              </svg>
+              <span class="ml-1 text-gray-700 font-medium">4.9/5</span>
+              <span class="ml-1 text-gray-500 text-sm">(128 reviews)</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Profile Info -->
+        <div class="md:w-2/3 md:pl-8">
+          <div class="flex flex-col md:flex-row justify-between">
+            <div>
+              <h1 class="text-2xl font-bold text-gray-900">Muhammad Iqra Bilmaruf, Esq.</h1>
+              <p class="text-lg text-gray-600">Partner, ESJE Legal Partnership</p>
+              <div class="flex flex-wrap gap-2 mt-2">
+                <span class="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded-full">✦ Corporate Law</span>
+                <span class="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded-full">✦ Crypto & Blockchain</span>
+                <span class="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded-full">✦ Investment</span>
+              </div>
+            </div>
+            
+            <!-- CTA Buttons -->
+            <div class="mt-4 md:mt-0 flex flex-col space-y-2">
+              <button class="px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
+                Book Consultation (150 Credits)
+              </button>
+              <button id="openDocumentsModal" class="px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">
+                View Verified Documents
+              </button>
+            </div>
+          </div>
+          
+          <!-- Summary -->
+          <div class="mt-6">
+            <h2 class="text-lg font-medium text-gray-900 mb-2">Professional Summary</h2>
+            <p class="text-gray-600">
+              Muhammad Iqra Bilmaruf is a seasoned corporate lawyer with expertise in cryptocurrency, AI, blockchain, and web-3 technologies. His comprehensive understanding of both legal and technological landscapes makes him an invaluable asset to clients.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Content Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Credentials Column -->
+      <div class="md:col-span-1">
+        <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+          <h2 class="text-xl font-bold text-gray-900 mb-4">Credentials & Background</h2>
+          
+          <!-- Education -->
+          <div class="mb-6">
+            <h3 class="text-gray-900 font-medium mb-2">Education</h3>
+            <div class="pl-4">
+              <div class="font-medium">Law Degree, Parahyangan Catholic University</div>
+              <div class="text-sm text-gray-500">Corporate Law Specialization</div>
+            </div>
+          </div>
+          
+          <!-- Expertise -->
+          <div class="mb-6">
+            <h3 class="text-gray-900 font-medium mb-2">Expertise Areas</h3>
+            <div class="pl-4">
+              <div class="font-medium">Corporate Law</div>
+              <div class="text-sm text-gray-500">Commercial transactions, negotiation</div>
+            </div>
+          </div>
+          
+          <!-- Location -->
+          <div class="mb-6">
+            <h3 class="text-gray-900 font-medium mb-2">Location & Availability</h3>
+            <div class="pl-4">
+              <div class="font-medium">Jakarta, Indonesia (WIB/GMT+7)</div>
+              <div class="text-sm text-gray-500">Available Mon-Fri, 9am-5pm</div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Testimonials -->
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h2 class="text-xl font-bold text-gray-900 mb-4">Client Testimonials</h2>
+          <div class="space-y-6">
+            <div class="border-b border-gray-100 pb-6">
+              <div class="flex items-center mb-2">
+                <div class="flex text-yellow-400">
+                  <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                  </svg>
+                  <span class="ml-1">5.0</span>
+                </div>
+                <span class="ml-2 text-sm text-gray-500">2 months ago</span>
+              </div>
+              <p class="text-gray-600 text-sm">
+                "Bibil provided exceptional guidance during our angel investment round. His expertise was invaluable."
+              </p>
+              <div class="mt-2 text-sm text-gray-500">— Anonym</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Main Content Column -->
+      <div class="md:col-span-2">
+        <!-- Content sections would go here -->
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h2 class="text-xl font-bold text-gray-900 mb-4">Experience & Services</h2>
+          <p class="text-gray-600 mb-4">
+            With over 10 years of experience in corporate law and emerging technologies, Muhammad specializes in helping clients navigate the complex legal landscape of digital assets and blockchain technology.
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+            <div class="border border-gray-200 rounded-lg p-4">
+              <h3 class="font-medium text-gray-900 mb-2">Legal Consultation</h3>
+              <p class="text-sm text-gray-600">Expert guidance on corporate and technology law matters</p>
+            </div>
+            <div class="border border-gray-200 rounded-lg p-4">
+              <h3 class="font-medium text-gray-900 mb-2">Contract Review</h3>
+              <p class="text-sm text-gray-600">Thorough analysis of legal documents and agreements</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <!-- Verified Documents Modal -->
+  <div id="documentsModal" class="fixed inset-0 bg-gray-500 bg-opacity-75 flex items-center justify-center z-50 hidden">
+    <div class="bg-white rounded-lg shadow-xl max-w-2xl w-full mx-4 max-h-[80vh] flex flex-col">
+      <div class="p-6 border-b border-gray-200 flex justify-between items-center">
+        <h2 class="text-xl font-bold text-gray-900">Verified Legal Documents</h2>
+        <button id="closeDocumentsModal" class="text-gray-400 hover:text-gray-500">
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+      
+      <div class="p-6 overflow-y-auto flex-grow">
+        <p class="text-gray-600 mb-4">
+          The following documents have been verified as completed projects by this attorney. All sensitive information has been redacted to protect client confidentiality.
+        </p>
+        
+        <div class="space-y-4">
+          <!-- Document Item 1 -->
+          <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50">
+            <div class="flex justify-between items-start">
+              <div>
+                <h3 class="font-medium text-gray-900">Series A Investment Agreement</h3>
+                <p class="text-sm text-gray-600 mt-1">Technology Sector • Completed May 2023</p>
+              </div>
+              <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Verified</span>
+            </div>
+            <div class="mt-3">
+              <p class="text-sm text-gray-600">
+                Drafted and negotiated investment agreement for a technology startup's Series A funding round. Included complex provisions for intellectual property protection and governance rights.
+              </p>
+            </div>
+            <div class="mt-3 flex items-center text-sm text-gray-500">
+              <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path>
+              </svg>
+              Duration: 1 day
+            </div>
+          </div>
+          
+          <!-- Document Item 2 -->
+          <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50">
+            <div class="flex justify-between items-start">
+              <div>
+                <h3 class="font-medium text-gray-900">Blockchain Token Issuance Framework</h3>
+                <p class="text-sm text-gray-600 mt-1">Fintech • Completed November 2023</p>
+              </div>
+              <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Verified</span>
+            </div>
+            <div class="mt-3">
+              <p class="text-sm text-gray-600">
+                Developed legal framework for token issuance compliant with multiple jurisdictions. Included regulatory compliance documentation and investor protection mechanisms.
+              </p>
+            </div>
+            <div class="mt-3 flex items-center text-sm text-gray-500">
+              <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path>
+              </svg>
+              Duration: 3 hours
+            </div>
+          </div>
+          
+          <!-- Document Item 3 -->
+          <div class="border border-gray-200 rounded-lg p-4 hover:bg-gray-50">
+            <div class="flex justify-between items-start">
+              <div>
+                <h3 class="font-medium text-gray-900">Cross-Border Joint Venture Agreement</h3>
+                <p class="text-sm text-gray-600 mt-1">Manufacturing • Completed February 2024</p>
+              </div>
+              <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Verified</span>
+            </div>
+            <div class="mt-3">
+              <p class="text-sm text-gray-600">
+                Structured and negotiated joint venture between entities from different jurisdictions. Addressed complex issues of governance, profit sharing, and intellectual property rights.
+              </p>
+            </div>
+            <div class="mt-3 flex items-center text-sm text-gray-500">
+              <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path>
+              </svg>
+              Duration: 6 hours
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="p-6 border-t border-gray-200">
+        <div class="flex justify-end">
+          <button id="closeModalButton" class="px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <footer class="bg-white mt-12 py-8 border-t border-gray-200">
+    <div class="max-w-5xl mx-auto px-4 text-center text-gray-500 text-sm">
+      © 2025 LexSure. All rights reserved.
+    </div>
+  </footer>
+  
+  <!-- Modal Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const modal = document.getElementById('documentsModal');
+      const openButton = document.getElementById('openDocumentsModal');
+      const closeButton = document.getElementById('closeDocumentsModal');
+      const closeModalButton = document.getElementById('closeModalButton');
+      
+      function openModal() {
+        modal.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+      }
+      
+      function closeModal() {
+        modal.classList.add('hidden');
+        document.body.style.overflow = '';
+      }
+      
+      openButton.addEventListener('click', openModal);
+      closeButton.addEventListener('click', closeModal);
+      closeModalButton.addEventListener('click', closeModal);
+      
+      // Close modal when clicking outside
+      modal.addEventListener('click', function(event) {
+        if (event.target === modal) {
+          closeModal();
+        }
+      });
+      
+      // Close modal with Escape key
+      document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape' && !modal.classList.contains('hidden')) {
+          closeModal();
+        }
+      });
+    });
+  </script>
+</body>
+</html>
