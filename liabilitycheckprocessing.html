@@ -1,0 +1,244 @@
+und<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Processing Your Document - LexSure</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 font-sans">
+  <header class="bg-white shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16 items-center">
+        <div class="flex-shrink-0 flex items-center">
+          <a href="index.html" class="text-indigo-600 font-bold text-xl">LexSure</a>
+        </div>
+        <nav class="hidden md:flex space-x-8">
+          <a href="index.html" class="text-gray-500 hover:text-gray-900">Home</a>
+          <a href="#" class="text-gray-500 hover:text-gray-900">Features</a>
+          <a href="#" class="text-gray-500 hover:text-gray-900">Pricing</a>
+          <a href="#" class="text-gray-500 hover:text-gray-900">FAQ</a>
+        </nav>
+        <div>
+          <a href="login.html" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
+            Sign In
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="text-center mb-8">
+      <h1 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Analyzing Your Document</h1>
+      <p class="mt-4 text-xl text-gray-500">Our AI legal engine is processing your document</p>
+    </div>
+
+    <!-- Processing Animation Section -->
+    <div class="bg-white shadow-md rounded-lg overflow-hidden mb-12">
+      <div class="p-8 text-center">
+        <!-- Loading Animation -->
+        <div class="flex justify-center mb-8">
+          <div class="relative">
+            <div class="w-24 h-24 border-indigo-600 border-t-4 border-b-4 rounded-full animate-spin"></div>
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+              <svg class="w-12 h-12 text-indigo-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1.323l3.954 1.582 1.599-.8a1 1 0 01.894 1.79l-1.233.616 1.738 5.42a1 1 0 01-.285 1.05A3.989 3.989 0 0115 15a3.989 3.989 0 01-2.667-1.019 1 1 0 01-.285-1.05l1.715-5.349L11 6.477V16h2a1 1 0 110 2H7a1 1 0 110-2h2V6.477L6.237 7.582l1.715 5.349a1 1 0 01-.285 1.05A3.989 3.989 0 015 15a3.989 3.989 0 01-2.667-1.019 1 1 0 01-.285-1.05l1.738-5.42-1.233-.617a1 1 0 01.894-1.788l1.599.799L9 4.323V3a1 1 0 011-1z" clip-rule="evenodd"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">AI Legal Analysis in Progress</h2>
+        
+        <!-- Progress Indicators -->
+        <div class="max-w-md mx-auto">
+          <div class="space-y-6 mb-8">
+            <div>
+              <div class="flex items-center justify-between mb-1">
+                <span class="text-sm font-medium text-gray-700">Document Parsing</span>
+                <span class="text-sm font-medium text-indigo-600">Complete</span>
+              </div>
+              <div class="w-full bg-gray-200 rounded-full h-2">
+                <div class="bg-indigo-600 h-2 rounded-full" style="width: 100%"></div>
+              </div>
+            </div>
+            
+            <div>
+              <div class="flex items-center justify-between mb-1">
+                <span class="text-sm font-medium text-gray-700">Liability Analysis</span>
+                <span class="text-sm font-medium text-indigo-600">In Progress</span>
+              </div>
+              <div class="w-full bg-gray-200 rounded-full h-2">
+                <div class="bg-indigo-600 h-2 rounded-full animate-pulse" style="width: 65%"></div>
+              </div>
+            </div>
+            
+            <div>
+              <div class="flex items-center justify-between mb-1">
+                <span class="text-sm font-medium text-gray-700">Rights Identification</span>
+                <span class="text-sm font-medium text-gray-500">Pending</span>
+              </div>
+              <div class="w-full bg-gray-200 rounded-full h-2">
+                <div class="bg-gray-300 h-2 rounded-full" style="width: 0%"></div>
+              </div>
+            </div>
+            
+            <div>
+              <div class="flex items-center justify-between mb-1">
+                <span class="text-sm font-medium text-gray-700">Generating Report</span>
+                <span class="text-sm font-medium text-gray-500">Pending</span>
+              </div>
+              <div class="w-full bg-gray-200 rounded-full h-2">
+                <div class="bg-gray-300 h-2 rounded-full" style="width: 0%"></div>
+              </div>
+            </div>
+          </div>
+          
+          <p class="text-gray-600 text-sm">This typically takes 30-45 seconds</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Upsell Banners Section -->
+    <div class="space-y-6">
+      <!-- Attorney Directory Banner -->
+      <div class="bg-gradient-to-r from-indigo-600 to-purple-600 rounded-lg shadow-lg overflow-hidden">
+        <div class="md:flex">
+          <div class="p-8 md:w-2/3">
+            <h3 class="text-2xl font-bold text-white mb-2">Need Expert Legal Advice?</h3>
+            <p class="text-indigo-100 mb-6">Connect with verified attorneys who specialize in your specific legal needs. Get personalized guidance beyond AI analysis.</p>
+            <a href="attorneydirectory.html" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-white hover:bg-indigo-50 transition">
+              Browse Attorney Directory
+              <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+              </svg>
+            </a>
+          </div>
+          <div class="hidden md:block md:w-1/3 bg-indigo-800 p-8">
+            <div class="h-full flex items-center justify-center">
+              <div class="text-center">
+                <div class="bg-white rounded-full p-3 inline-block mb-4">
+                  <svg class="w-10 h-10 text-indigo-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path>
+                  </svg>
+                </div>
+                <p class="text-white font-medium">100+ Verified Attorneys</p>
+                <p class="text-indigo-200 text-sm">Ready to help you today</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Premium Analysis Banner -->
+      <div class="bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden">
+        <div class="md:flex">
+          <div class="p-8 md:w-2/3">
+            <div class="flex items-center mb-4">
+              <div class="bg-yellow-100 p-2 rounded-full mr-3">
+                <svg class="w-6 h-6 text-yellow-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900">Upgrade to Premium Analysis</h3>
+            </div>
+            <p class="text-gray-600 mb-6">Get deeper insights, jurisdiction-specific analysis, and priority processing with our premium service.</p>
+            <button class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gradient-to-r from-yellow-400 to-yellow-600 hover:from-yellow-500 hover:to-yellow-700 transition">
+              Upgrade Now
+              <span class="ml-2 bg-yellow-800 bg-opacity-20 px-2 py-0.5 rounded text-sm">+100 Credits</span>
+            </button>
+          </div>
+          <div class="hidden md:block md:w-1/3 bg-gray-50 p-8">
+            <div class="h-full flex items-center justify-center">
+              <div class="space-y-3">
+                <div class="flex items-center">
+                  <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  <span class="text-gray-700">Jurisdiction-specific analysis</span>
+                </div>
+                <div class="flex items-center">
+                  <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  <span class="text-gray-700">Priority processing</span>
+                </div>
+                <div class="flex items-center">
+                  <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  <span class="text-gray-700">Detailed recommendations</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Fixed Bottom CTA Box -->
+  <div class="fixed bottom-0 left-0 right-0 bg-white shadow-md border-t border-gray-200 p-4">
+    <div class="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between">
+      <div class="flex items-center mb-4 sm:mb-0">
+        <div class="bg-indigo-100 p-2 rounded-full mr-3">
+          <span class="text-indigo-600">💡</span>
+        </div>
+        <div>
+          <p class="text-gray-900 font-medium">Top up your legal credits to continue:</p>
+          <p class="text-gray-600">Current Balance: <span class="font-bold">0 Credits</span></p>
+        </div>
+      </div>
+      <div class="flex space-x-4">
+        <a href="topuplegalcredit.html" class="bg-indigo-600 text-white py-2 px-4 rounded-lg font-medium hover:bg-indigo-700 transition">
+          ➕ Top Up Credits
+        </a>
+        <button class="bg-white text-indigo-600 border border-indigo-600 py-2 px-4 rounded-lg font-medium hover:bg-indigo-50 transition">
+          View Legal Partners
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-white mt-12 border-t border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div class="text-center text-gray-500 text-sm">
+        &copy; 2025 LexSure. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Simulate processing and redirect to results page
+    document.addEventListener('DOMContentLoaded', function() {
+      // Update progress bars sequentially
+      setTimeout(function() {
+        document.querySelectorAll('.progress-bar')[1].style.width = '100%';
+        document.querySelectorAll('.progress-status')[1].textContent = 'Complete';
+        
+        setTimeout(function() {
+          document.querySelectorAll('.progress-bar')[2].style.width = '75%';
+          document.querySelectorAll('.progress-status')[2].textContent = 'In Progress';
+          
+          setTimeout(function() {
+            document.querySelectorAll('.progress-bar')[2].style.width = '100%';
+            document.querySelectorAll('.progress-status')[2].textContent = 'Complete';
+            
+            setTimeout(function() {
+              document.querySelectorAll('.progress-bar')[3].style.width = '60%';
+              document.querySelectorAll('.progress-status')[3].textContent = 'In Progress';
+              
+              // Redirect to results page after processing
+              setTimeout(function() {
+                window.location.href = 'liabilitycheckresult.html';
+              }, 3000);
+              
+            }, 1500);
+          }, 2000);
+        }, 2000);
+      }, 1500);
+    });
+  </script>
+</body>
+</html>
